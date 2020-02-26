@@ -4,6 +4,7 @@ import DividerLoginForm from './../../../../templates/semantic-ui/divider/Divide
 import ItemDivided from './../../../../templates/semantic-ui/divider/ItemDivided'
 import './style.css'
 import SearchStandard from './../../../../templates/semantic-ui/searchs/SearchStandard'
+import PaginationShorthand from './../../../../templates/semantic-ui/pagination/PaginationShorthand'
 
 //============== Funções e atributos temporarios para testes
 function makeid(length) {
@@ -31,20 +32,22 @@ function list(event) {
         <>
             {tags.map(function(t, i) {
                 return (
-                    <ItemDivided 
-                        activeItemExtra={true} 
-                        activeLabel={true} 
-                        activeButtom={true} 
-                        fotoFeed={fotosFeed} 
-                        titleFeed={makeid(tags.length)} 
-                        subTitleFeed="Subtitulo de teste de feed" 
-                        paragraphFeed={msg} 
-                        tagItemExtra={tags} 
-                        iconItemExtra={icons} 
-                        floatButtom="right" 
-                        nameButtom="Acessar" 
-                        nameIconButtom="building"
-                    />
+                    <>
+                        <ItemDivided 
+                            activeItemExtra={true} 
+                            activeLabel={true} 
+                            activeButtom={true} 
+                            fotoFeed={fotosFeed} 
+                            titleFeed={makeid(tags.length)} 
+                            subTitleFeed="Subtitulo de teste de feed" 
+                            paragraphFeed={msg} 
+                            tagItemExtra={tags} 
+                            iconItemExtra={icons} 
+                            floatButtom="right" 
+                            nameButtom="Acessar" 
+                            nameIconButtom="building"
+                        />
+                    </>
                 )
             })}
         </>
@@ -54,8 +57,13 @@ function list(event) {
 function MainPublic(props) {
     return (
         <div id="main-content">
-            <SearchStandard />
+            <center>
+                <SearchStandard />
+            </center>
             {list(props)}
+            <center>
+                <PaginationShorthand />
+            </center>
         </div>
     )
 }

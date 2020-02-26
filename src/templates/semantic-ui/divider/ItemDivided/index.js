@@ -58,7 +58,7 @@ function checkItemExtra(event, eventLabel, eventButtom, paramsLabels, paramsButt
     if (event === false || event === undefined){
         return (
             <Item.Extra>
-                <Button primary floated='right'>
+                <Button color='instagram' floated='right'>
                   Buy tickets
                   <Icon name='right chevron' />
                 </Button>
@@ -91,14 +91,14 @@ function checkItemExtraLabel(event, params) {
 function checkButtonItemExtra(event, params) {
     if (event === false || event === undefined){
         return (
-          <Button primary floated='right'>
+          <Button color='instagram' floated='right'>
             Buy tickets
             <Icon name='right chevron' />
           </Button>
         )
     } else {
         return (
-          <Button primary floated={params[0]}>
+          <Button color='instagram' floated={params[0]}>
             {params[1]}&nbsp;
             <Icon name={params[2]} />
           </Button>
