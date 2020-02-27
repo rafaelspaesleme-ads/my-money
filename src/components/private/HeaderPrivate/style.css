@@ -1,0 +1,23 @@
+.main-header-private {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.main-grid-row-header {
+    left: 0 !important;
+    position: static !important;
+    background-color: black !important;
+    width: 100% !important;
+    height: 60px !important;
+    color: yellow;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .sticky + .content {
+    padding-top: 102px;
+  }

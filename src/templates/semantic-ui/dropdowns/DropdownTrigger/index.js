@@ -11,7 +11,7 @@ const trigger = (
 
 const options = [
   { key: 'sign', text: 'Login', icon: 'sign-in' },
-  { key: 'new-user', text: 'Novo usuário', icon: 'user circle' },
+  { key: 'new-user', text: 'Novo cliente', icon: 'user circle' },
   { key: 'about', text: 'Sobre', icon: 'address card' },
 ]
 

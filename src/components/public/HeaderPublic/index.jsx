@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import HeaderDividing from './../../../../templates/semantic-ui/headers/HeaderDividing'
-import DropdownTrigger from './../../../../templates/semantic-ui/dropdowns/DropdownTrigger'
+import HeaderDividing from './../../../templates/semantic-ui/headers/HeaderDividing'
+import DropdownTrigger from './../../../templates/semantic-ui/dropdowns/DropdownTrigger'
 import './style.css'
 
 

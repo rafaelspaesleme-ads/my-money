@@ -1,10 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import DividerLoginForm from './../../../../templates/semantic-ui/divider/DividerLoginForm'
-import ItemDivided from './../../../../templates/semantic-ui/divider/ItemDivided'
+import DividerLoginForm from './../../../templates/semantic-ui/divider/DividerLoginForm'
+import ItemDivided from './../../../templates/semantic-ui/divider/ItemDivided'
 import './style.css'
-import SearchStandard from './../../../../templates/semantic-ui/searchs/SearchStandard'
-import PaginationShorthand from './../../../../templates/semantic-ui/pagination/PaginationShorthand'
+import SearchStandard from './../../../templates/semantic-ui/searchs/SearchStandard'
+import PaginationShorthand from './../../../templates/semantic-ui/pagination/PaginationShorthand'
 
 //============== Funções e atributos temporarios para testes
 function makeid(length) {
