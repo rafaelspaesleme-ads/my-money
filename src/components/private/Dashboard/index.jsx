@@ -3,6 +3,7 @@ import { Grid, Icon, List, Label } from 'semantic-ui-react'
 import { Link } from 'react-router-dom'
 import TableFullWidth from './../../../templates/semantic-ui/tables/TableFullWidth'
 import './style.css'
+import ModalCloseIcon from '../../../templates/semantic-ui/modal/ModalCloseIcon';
 
 // import { Container } from './styles';
 const windowWidth = window.innerWidth;
@@ -45,7 +46,7 @@ export default class Dashboard extends Component {
                     </List.Item>
                     <hr id="main-hr"/>
                     <List.Item className="main-list-item" >
-                        <Link className="main-link-dashboard" to="/exit">
+                        <Link className="main-link-dashboard" to="/">
                             <Label size="large" className="main-label-menu">
                                 Sair
                             </Label>
@@ -63,6 +64,9 @@ export default class Dashboard extends Component {
                         headerColunm3='Quantidade' 
                         headerColunm4='Resultado' 
                         nameActionButton='Nova venda'
+                        iconActionButton='money bill alternate outline'
+                        keyObject={1} 
+                        typeObject={0} 
                     />
                 </Grid.Row>
                 <Grid.Row className="main-grid-row-table" >
@@ -72,7 +76,10 @@ export default class Dashboard extends Component {
                         headerColunm2='Valor' 
                         headerColunm3='Quantidade' 
                         headerColunm4='Resultado' 
-                        nameActionButton='Nova venda'
+                        nameActionButton='Nova venda' 
+                        iconActionButton='money bill alternate outline'
+                        keyObject={1} 
+                        typeObject={0} 
                     />
                 </Grid.Row>
                 <Grid.Row className="main-grid-row-table" >
@@ -82,7 +89,10 @@ export default class Dashboard extends Component {
                         headerColunm2='Valor' 
                         headerColunm3='Quantidade' 
                         headerColunm4='Resultado' 
-                        nameActionButton='Nova venda'
+                        nameActionButton='Nova venda' 
+                        iconActionButton='money bill alternate outline'
+                        keyObject={1} 
+                        typeObject={0} 
                     />
                 </Grid.Row>
                 <Grid.Row className="main-grid-row-table" >
@@ -93,6 +103,10 @@ export default class Dashboard extends Component {
                         headerColunm3='Quantidade' 
                         headerColunm4='Resultado' 
                         nameActionButton='Novo produto'
+                        iconActionButton='dolly flatbed'
+                        keyObject={1} 
+                        typeObject={0} 
+
                     />
                 </Grid.Row>
             </Grid.Column>

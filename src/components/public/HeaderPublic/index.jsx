@@ -9,13 +9,13 @@ function HeaderPublic(props) {
     return (
         <div id="main-header-public">
         <DropdownTrigger />        
-            <HeaderDividing 
-                titleHeader="Teste" 
-                colorHeader="yellow" 
-                sizeHeader="huge" 
-                textAlignHeader="center" 
-                iconHeader="money bill alternate outline" 
-            />    
+        <HeaderDividing 
+            titleHeader="Teste" 
+            colorHeader="yellow" 
+            sizeHeader="huge" 
+            textAlignHeader="center" 
+            iconHeader="money bill alternate outline" 
+        />    
         </div>
     )
 }

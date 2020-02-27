@@ -20,14 +20,18 @@ function ModalCloseIcon(props) {
     const iconModal = props.buttonDropdownItemIcon;
     const keyModal = props.buttonDropdownItemKey;
     const labelModal = props.buttonDropdownItemLabel;
+    const colorModal = props.buttonDropdownItemColor;
 
 
     return (<Modal trigger={<Button 
                         className="main-button-modal"  
                         key={keyModal}
+                        color={colorModal}
                     >
-                    <Icon name={iconModal} />
-                    {labelModal}
+                    <center>
+                        <Icon name={iconModal} />
+                        {labelModal}
+                    </center>
                     </Button>} 
     closeIcon>
         <Header icon={iconModal} content={labelModal} />

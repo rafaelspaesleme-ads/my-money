@@ -23,6 +23,7 @@ const DropdownTrigger = () => (
           buttonDropdownItemIcon={options[0].icon} 
           buttonDropdownItemLabel={options[0].text}
           buttonDropdownItemKey={options[0].key}
+          buttonDropdownItemColor={null}
           typeDropdown={0}
         />
       </Dropdown.Item>
@@ -31,6 +32,7 @@ const DropdownTrigger = () => (
           buttonDropdownItemIcon={options[1].icon} 
           buttonDropdownItemLabel={options[1].text}
           buttonDropdownItemKey={options[1].key}
+          buttonDropdownItemColor={null}
           typeDropdown={1}
         />
       </Dropdown.Item>
@@ -40,6 +42,7 @@ const DropdownTrigger = () => (
           buttonDropdownItemIcon={options[2].icon} 
           buttonDropdownItemLabel={options[2].text}
           buttonDropdownItemKey={options[2].key}
+          buttonDropdownItemColor={null}
           typeDropdown={2}
         />
       </Dropdown.Item>

@@ -1,11 +1,29 @@
 import React from 'react'
 import { Button, Checkbox, Icon, Table, Menu } from 'semantic-ui-react'
+import ModalCloseIcon from '../../modal/ModalCloseIcon';
+import './style.css'
+
+function actionModal(eventIcon, eventText, eventKey, typeComponent) {
+  return (
+    <ModalCloseIcon 
+      buttonDropdownItemIcon={eventIcon} 
+      buttonDropdownItemLabel={eventText}
+      buttonDropdownItemKey={eventKey}
+      typeDropdown={typeComponent}
+      buttonDropdownItemColor='brown'
+    />
+  )
+}
 
 function TableFullWidth(props) {
 
   var list = props.listObjects;
 
   var listElement; 
+
+  const iconAction = props.iconActionButton;
+
+  const titleObject = props.nameActionButton;
   
   if (list === undefined){
     listElement = [
@@ -61,15 +79,16 @@ function TableFullWidth(props) {
           <Table.HeaderCell />
           <Table.HeaderCell colSpan='4'>
             <Button
+              className='main-action-button-table'
               floated='right'
-              icon
+              icon={iconAction}
               labelPosition='left'
               color='instagram'
               size='small'
             >
-              <Icon name='money bill alternate outline' /> {props.nameActionButton}
+              {actionModal(iconAction, titleObject, props.keyObject, props.typeObject)}
             </Button>
-            <Menu floated='center' pagination>
+            <Menu className='main-menu-pagination' floated='center' pagination>
               <Menu.Item as='a' icon>
                 <Icon name='chevron left' />
               </Menu.Item>
